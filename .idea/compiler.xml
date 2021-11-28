@@ -7,11 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="es-springdata" />
         <module name="ES-Test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="es-springdata" target="1.8" />
+      <module name="es-springdate" target="1.8" />
       <module name="ES-Test" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="es-springdata" options="-parameters" />
+    </option>
   </component>
 </project>
